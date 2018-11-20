@@ -1,2 +1,2 @@
-void mk_Matrix(int N)
+void mk_Matrix(int bingo[N][N])
 
