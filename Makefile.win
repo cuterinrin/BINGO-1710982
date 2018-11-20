@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = BGmain.o
-LINKOBJ  = BGmain.o
+OBJ      = BGmain.o "print\ Matrix.o" "mk\ Matrix.o" count_bingo.o process_bingo.o getNme.o getNcom.o
+LINKOBJ  = BGmain.o "print Matrix.o" "mk Matrix.o" count_bingo.o process_bingo.o getNme.o getNcom.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -26,3 +26,21 @@ $(BIN): $(OBJ)
 
 BGmain.o: BGmain.c
 	$(CC) -c BGmain.c -o BGmain.o $(CFLAGS)
+
+"print\ Matrix.o": print\ Matrix.c
+	$(CC) -c "print Matrix.c" -o "print Matrix.o" $(CFLAGS)
+
+"mk\ Matrix.o": mk\ Matrix.c
+	$(CC) -c "mk Matrix.c" -o "mk Matrix.o" $(CFLAGS)
+
+count_bingo.o: count_bingo.c
+	$(CC) -c count_bingo.c -o count_bingo.o $(CFLAGS)
+
+process_bingo.o: process_bingo.c
+	$(CC) -c process_bingo.c -o process_bingo.o $(CFLAGS)
+
+getNme.o: getNme.c
+	$(CC) -c getNme.c -o getNme.o $(CFLAGS)
+
+getNcom.o: getNcom.c
+	$(CC) -c getNcom.c -o getNcom.o $(CFLAGS)

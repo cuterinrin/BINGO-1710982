@@ -1,1 +1,1 @@
-get_number_com
+void get_number_com
