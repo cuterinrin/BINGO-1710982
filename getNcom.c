@@ -1,4 +1,4 @@
-int get_number_com(int *input_com)
+int get_number_com(int *input_com);
  
 /*
 뽑은 난수가 표에 있는 수>RETURN 

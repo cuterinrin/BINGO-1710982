@@ -1,2 +1,2 @@
-int process_bingo;
+;int process_bingo;
 

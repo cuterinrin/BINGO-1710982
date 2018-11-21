@@ -1,4 +1,5 @@
-void mk_Matrix(int bingo[N][N])
+#define N 5
+void mk_Matrix(int bingo[N][N]);
 /*
 1.N*N 배열만들기
 2.그걸 랜덤으로 섞음
