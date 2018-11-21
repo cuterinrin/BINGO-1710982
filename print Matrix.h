@@ -1,2 +1,1 @@
-void printMatrix(int bingo[N][N]);
-
+void printMatrix(int N, int bingo[N][N]);

@@ -7,7 +7,7 @@ do
 	retry = 0;//초기화  
     printf("1에서 %i 사이의 수를 입력하시오. : ", N*N);
     scanf("%i", &input_user);
-        if (num < 1 || num > N*N) 
+        if (input_user < 1 || input_user > N*N) 
 		{// 다시 입력받아야 함  
         retry = 1;                     
         }

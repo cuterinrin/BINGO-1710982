@@ -12,7 +12,7 @@
 #define M 5	// M은 그은 줄 갯수 
  
  
-int main(int argc, char *argv[]) ;{
+int main(int argc, char *argv[]) {
 
 	//1.변수선언 
 	int bingo_user[N][N]; //2차원 배열 - 유 저 
@@ -20,29 +20,33 @@ int main(int argc, char *argv[]) ;{
 	int N; //N*N배열 
 	int *input_user, *input_com; //선택 숫자 
 	int line_u, line_c; //빙고 라인 
-	int *count_line_user;
+	int *count_line_user;//빙고 라인 갯수 
 	int *count_line_com;
 	int tryy=0;//시도횟수 
 	
 	//2.빙고판 만들기
-	void mk_Matrix(bingo_user[N][N]);	
-	void mk_Matrix(bingo_computer[N][N]);	
+	void mk_Matrix(N, bingo_user[N][N]);	
+	void mk_Matrix(N, bingo_computer[N][N]);	
 
-	printf("***********BINGO BINGO***********"); 
+	printf("**************BINGO BINGO**************"); 
 	
 	//3. 빙고 반복할 본체 
 	do
 	{
 	void printMatrix(bingo_user[N][N]); //유저의 매트릭스 출력
+	printf("~내 빙고판~");
 	void printMatrix(bingo_computer[N][N]); //컴퓨터의 매트릭스 출력 
+	printf("~컴퓨터 빙고판~"); 
 	void get_number_me(input_user);//내가 선택할 번호 받는 함수 
 	int get_number_com(input_com);//컴퓨터 선택 번호 함수 
-	int process_bingo(num_user, num_com);//선택한 숫자를 -1로 치환하는 함수 
+	void process_bingo(num_user, num_com);//선택한 숫자를 -1로 치환하는 함수 
 	int count_bingo(bingo_user, N);//나의 빙고 라인 카운트 
+	printf("당신의 현재 빙고 수: %i", count_line_user); 
 	int count_bingo(bingo_computer, N);//컴퓨터 빙고 라인 카운트 
+	printf("컴퓨터의 현재 빙고 수 : %i", count_line_com);
 	tryy++//실행횟수  
 	}
-	while(count_line_user <M && count_line_com < M);
+	while((count_line_user <M) && (count_line_com < M));
 	//유저나 컴퓨터 둘 중 하나가 빙고 라인 달성하면 빠져나옴 
 	
 	//4. 승패 출력 

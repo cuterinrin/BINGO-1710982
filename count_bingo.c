@@ -6,10 +6,10 @@ int count_bingo(int *count_line, int N);
 
 {
 	int i, j;
-	int cell[12]={0};
+	int cell[2N+2]={0};
 	int line=0;
 	
-/*bingo칸수[12]배열을 만들고, 
+/*bingo칸수[2N+2]배열을 만들고, 
 0~N-1까지는 가로줄, N~2N-1까지는 세로줄, 2N,2N+1은 대각선 두 줄에 할당한다.
 그리고 for문을 돌려 이 줄이 빙고 조건을 만족하면 line++*/
 
@@ -41,9 +41,9 @@ int count_bingo(int *count_line, int N);
 		}
 	}
 	
-	for(i=4; i>=0; i--)	//대각선 '/' 
+	for(i=(N-1); i>=0; i--)	//대각선 '/' 
 	{
-		for(j=4; j>=0; j--)
+		for(j=(N-1); j>=0; j--)
 		{
 			if(bingo[i*N+j] == '-1') 
 			{cell[2N+1]++;}			
