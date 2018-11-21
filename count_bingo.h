@@ -1,2 +1,2 @@
-int count_bingo(int *bingo, int N);
+int count_bingo(int *count_line, int N);
 

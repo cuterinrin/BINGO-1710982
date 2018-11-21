@@ -1,4 +1,4 @@
-int count_bingo(int *bingo, int N);
+int count_bingo(int *count_line, int N);
 //한줄이 모두 -1이 되면 빙고>가로,세로,대각선에 -1이 N개면 line 1개  
 //1.가로 빙고
 //2.세로 빙고
@@ -51,11 +51,11 @@ int count_bingo(int *bingo, int N);
 	}
 	
 	//여기까지 한 줄당 체크된 칸 수를 세었음, 이제 체크된 칸수=N칸이면 줄 1줄로 체크
-	for(i=0;i<2N+1;i++)
+	for(i=0;i<(2N+1);i++)
 	{
 		if(cell[i]==N)
-		line++;
+		count_line++;
 	}
 	 
-	return line;	//줄 수 반환  
+	return count_line;	//줄 수 반환  
 }
