@@ -1,4 +1,4 @@
-void printMatrix(int bingo[][N]); //매트릭스 출력, 실습ch9의 매트리스 출력 함수 가져옴
+void printMatrix(int bingo[N][N]); //매트릭스 출력, 실습ch9의 매트리스 출력 함수 가져옴
 	
 {
 int i, j;
