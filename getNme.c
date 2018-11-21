@@ -1,4 +1,4 @@
-void get_number_me(int *input_user);
+int get_number_me(int *input_user);
 
 int retry;//do-while 조건문 변수  
     
@@ -16,7 +16,7 @@ do
                         
 printf("%i를 선택했습니다. \n", input_user);   
 
-return ;
+return input_user;
 }
 
 

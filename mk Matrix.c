@@ -1,5 +1,5 @@
 #define N 5
-void mk_Matrix(int bingo[N][N]);
+void mk_Matrix(int bingo[][N]);
 /*
 1.N*N 배열만들기
 2.그걸 랜덤으로 섞음
@@ -9,7 +9,7 @@ void mk_Matrix(int bingo[N][N]);
 {
 srand(time(NULL));//랜덤숫자 
 int i,j,a,b,temp;//for문에 쓰일 변수들과 칸들을 서로 바꿀 때 쓸 매개변수 선언 
-int bingo[N][N];
+int bingo[][N];
 int rand_i = rand() % N;
 int rand_j = rand() % N;
 

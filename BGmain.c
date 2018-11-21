@@ -37,7 +37,7 @@ int main(int argc, char *argv[]) {
 	printf("~내 빙고판~");
 	void printMatrix(bingo_computer[N][N]); //컴퓨터의 매트릭스 출력 
 	printf("~컴퓨터 빙고판~"); 
-	void get_number_me(input_user);//내가 선택할 번호 받는 함수 
+	int get_number_me(input_user);//내가 선택할 번호 받는 함수 
 	int get_number_com(input_com);//컴퓨터 선택 번호 함수 
 	void process_bingo(num_user, num_com);//선택한 숫자를 -1로 치환하는 함수 
 	int count_bingo(bingo_user, N);//나의 빙고 라인 카운트 
